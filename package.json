@@ -1,0 +1,57 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "dev": "kottster dev --port 5480",
+    "dev:add-data-source": "kottster add-data-source",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@kottster/cli": "^2.x",
+    "@kottster/common": "^1.x",
+    "@kottster/react": "^1.x",
+    "@kottster/server": "^1.x",
+    "@mantine/charts": "^7.x",
+    "@mantine/core": "^7.x",
+    "@mantine/dates": "^7.x",
+    "@mantine/form": "^7.x",
+    "@mantine/hooks": "^7.x",
+    "@mantine/modals": "^7.x",
+    "@mantine/notifications": "^7.x",
+    "@remix-run/node": "^2.x",
+    "@remix-run/react": "^2.x",
+    "@remix-run/serve": "^2.x",
+    "@tanstack/react-query": "^4.x",
+    "@trpc/client": "^10.x",
+    "@trpc/react-query": "^10.x",
+    "@trpc/server": "^10.x",
+    "dayjs": "^1.x",
+    "isbot": "^4.x",
+    "knex": "^3.1.0",
+    "pg": "^8.7.1",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "react-feather": "^2.x",
+    "recharts": "^2.x",
+    "zod": "^3.x"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.x",
+    "@remix-run/dev": "^2.x",
+    "@types/node": "^18.x",
+    "@types/react": "^18.x",
+    "@types/react-dom": "^18.x",
+    "esbuild": "0.23.1",
+    "typescript": "^5.x",
+    "vite": "^5.x",
+    "vite-tsconfig-paths": "^4.x"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
